@@ -2,7 +2,7 @@
 /**
  * Core setup, site hooks and filters.
  */
-namespace TenUpThemeScaffold\Core;
+namespace PlaygroundTheme\Core;
 
 /**
  * Set up theme defaults and register supported WordPress features.
@@ -38,7 +38,7 @@ function setup() {
  * @return void
  */
 function i18n() {
-	load_theme_textdomain( 'tenup-theme-scaffold', TENUP_THEME_SCAFFOLD_PATH . '/languages' );
+	load_theme_textdomain( 'playground-theme', PLAYGROUND_THEME_PATH . '/languages' );
 }
 
 /**
@@ -76,7 +76,7 @@ function scripts() {
 
 	wp_enqueue_script(
 		'frontend',
-		TENUP_THEME_SCAFFOLD_TEMPLATE_URL . "/dist/js/frontend.min.js",
+		PLAYGROUND_THEME_TEMPLATE_URL . "/dist/js/frontend.min.js",
 		[],
 		false,
 		true
@@ -97,7 +97,7 @@ function styles() {
 
 	wp_enqueue_style(
 		'styles',
-		TENUP_THEME_SCAFFOLD_TEMPLATE_URL . "/dist/css/style.min.css",
+		PLAYGROUND_THEME_TEMPLATE_URL . "/dist/css/style.min.css",
 		false
 	);
 }

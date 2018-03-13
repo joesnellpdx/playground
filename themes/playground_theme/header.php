@@ -2,7 +2,7 @@
 /**
  * The template for displaying the header.
  *
- * @package TenUpThemeScaffold
+ * @package PlaygroundTheme
  * @since 0.1.0
  */
  ?>

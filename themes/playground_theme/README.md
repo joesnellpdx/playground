@@ -16,10 +16,10 @@
 - Rename folder 10up-theme-scaffold -> your project's name
 - Do case-sensitive search/replace for the following:
 
-	- TenUpThemeScaffold
-	- TENUP_THEME_SCAFFOLD
-	- tenup-theme-scaffold
-	- tenup_theme_scaffold
+	- PlaygroundTheme
+	- PLAYGROUND_THEME
+	- playground-theme
+	- PLAYGROUND_THEME
 
 - `cd` into the theme folder
 - run `npm install`

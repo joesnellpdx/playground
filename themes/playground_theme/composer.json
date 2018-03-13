@@ -1,5 +1,5 @@
 {
-  "name": "10up/tenup-theme-scaffold",
+  "name": "10up/playground-theme",
   "authors": [
     {
       "name": "Author",
@@ -11,7 +11,7 @@
   },
   "autoload": {
     "psr-4": {
-      "TenUpThemeScaffold\\": "includes/classes/"
+      "PlaygroundTheme\\": "includes/classes/"
     }
   },
   "require-dev": {
