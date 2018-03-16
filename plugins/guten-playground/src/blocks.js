@@ -11,4 +11,5 @@
 
 // import './block/block.js';
 // import './gutenberg-block-editable-example/block.js';
+import './commerce-links/block.js';
 import './commerce-link-item/block.js';
