@@ -23,4 +23,5 @@ themes/*
 !themes/playground_theme
 
 plugins/*
+!plugins/guten-playground
 

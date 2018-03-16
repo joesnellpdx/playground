@@ -1,0 +1,57 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+ $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.wp-block-cgb-block-commerce-link {
+	text-align: center;
+	position: relative;
+	a {
+			text-decoration: none;
+	}
+	.captions {
+			padding: 1em;
+	}
+	.caption-1 {
+			font-size: 1.4em;
+			color: #333;
+			font-weight: 400;
+	}
+	.caption-2 {
+			font-size: 1.3em;
+			color: $brand-primary;
+			font-weight: light;
+	}
+	.hover-overlay {
+		transition: all 0.5s;
+		background: rgba(255, 255, 255, 0);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.shop-now-cta {
+				display: none;
+				font-size: 1.35em;
+				color: #000;
+				padding: 0.5em;
+				border: solid 1px #000;
+				background: rgba(255, 255, 255, 0.25);
+		}
+	}
+	a:hover .hover-overlay {
+		background: rgba(255, 255, 255, 0.75);
+		.shop-now-cta {
+				display: block;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.wp-block-cgb-block-commerce-link {
+  text-align: center;
+  position: relative; }
+  .wp-block-cgb-block-commerce-link a {
+    text-decoration: none; }
+  .wp-block-cgb-block-commerce-link .captions {
+    padding: 1em; }
+  .wp-block-cgb-block-commerce-link .caption-1 {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: 400; }
+  .wp-block-cgb-block-commerce-link .caption-2 {
+    font-size: 1.3em;
+    color: #337ab7;
+    font-weight: light; }
+  .wp-block-cgb-block-commerce-link .hover-overlay {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .wp-block-cgb-block-commerce-link .hover-overlay .shop-now-cta {
+      display: none;
+      font-size: 1.35em;
+      color: #000;
+      padding: 0.5em;
+      border: solid 1px #000;
+      background: rgba(255, 255, 255, 0.25); }
+  .wp-block-cgb-block-commerce-link a:hover .hover-overlay {
+    background: rgba(255, 255, 255, 0.75); }
+    .wp-block-cgb-block-commerce-link a:hover .hover-overlay .shop-now-cta {
+      display: block; }
