@@ -102,7 +102,12 @@ registerBlockType( 'cgb/commerce-links', {
 		} = props;
 
 		return (
-			<div className={ className } data-columns={ columns }>
+			<div className={className} data-columns={columns}>
+				<div className="commerce-nav">
+					<p className="navtitle">this is the nav title</p>
+					<InnerBlocks.Content />
+					<p className="navend">this is the nav end</p>
+				</div>
 				<InnerBlocks.Content />
 			</div>
 		);

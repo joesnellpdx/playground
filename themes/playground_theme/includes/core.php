@@ -102,3 +102,34 @@ function styles() {
 	);
 }
 
+/**
+ * Custom Image Sizes
+ *
+ */
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'landscape-100', 100, 65, true ); // ratio 1.55
+	add_image_size( 'landscape-200', 200, 129, true ); // ratio 1.55
+	add_image_size( 'landscape-400', 400, 258, true );
+	add_image_size( 'landscape-800', 800, 516, true );
+	add_image_size( 'landscape-1200', 1200, 774, true );
+	add_image_size( 'landscape-1600', 1600, 1032, true );
+	add_image_size( 'landscape-2000', 2000, 1290, true );
+	add_image_size( 'landscape-2400', 2400, 1548, true );
+	add_image_size( 'landscape-3200', 3200, 2064, true );
+	add_image_size( 'landscape-4000', 4000, 2580, true );
+
+	add_image_size( 'square-100', 100, 100, true );
+	add_image_size( 'square-200', 200, 200, true ); // ratio 1
+	add_image_size( 'square-400', 400, 400, true );
+	add_image_size( 'square-800', 800, 800, true );
+	add_image_size( 'square-1200', 1200, 1200, true );
+	add_image_size( 'square-1600', 1600, 1600, true );
+	add_image_size( 'square-2000', 2000, 2000, true );
+	add_image_size( 'square-2400', 2400, 2400, true );
+	add_image_size( 'square-2400', 3200, 3200, true );
+	add_image_size( 'square-4000', 4000, 4000, true );
+}
+
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+}

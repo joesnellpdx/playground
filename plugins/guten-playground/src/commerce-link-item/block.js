@@ -53,11 +53,16 @@ registerBlockType( 'cgb/block-commerce-link', {
 		mediaID: {
 			type: 'number',
 		},
+		mediaALT: {
+			type: 'string',
+			default: '',
+		},
 		mediaURL: {
 			type: 'string',
 			source: 'attribute',
 			selector: 'img',
 			attribute: 'src',
+			alt: 'string',
 		},
 		captionOne: {
 			type: 'string',
@@ -78,9 +83,11 @@ registerBlockType( 'cgb/block-commerce-link', {
 		const focusedEditable = props.focus ? props.focus.editable || 'title' : null;
 		const attributes = props.attributes;
 		const onSelectImage = media => {
+			console.table( media );
 			props.setAttributes( {
 				mediaURL: media.url,
 				mediaID: media.id,
+				mediaALT: media.alt,
 			} );
 		};
 		const onChangeStyleSettings = applyStyles => {
@@ -131,7 +138,7 @@ registerBlockType( 'cgb/block-commerce-link', {
 					className="img-responsive"
 					onSelect={ onSelectImage }
 					type="image"
-					value={ attributes.mediaID }
+					value={attributes.mediaID}
 					render={ ( { open } ) => (
 						<Button className={ attributes.mediaID ? 'image-button' : 'button button-large' } onClick={ open }>
 							{ ! attributes.mediaID ? __( 'Upload Image' ) : <img src={ attributes.mediaURL } /> }
@@ -172,6 +179,7 @@ registerBlockType( 'cgb/block-commerce-link', {
 				captionOne,
 				captionTwo,
 				applyStyles,
+				mediaALT,
 			},
 		} = props;
 
@@ -180,7 +188,7 @@ registerBlockType( 'cgb/block-commerce-link', {
 				<a className={applyStyles} data-test={ commerceURL } href={ commerceURL } rel="nofollow noopener" target="_blank">
 					{
 						mediaURL && (
-							<img className="img-responsive" src={ mediaURL } alt="alt text not" />
+							<img className="img-responsive" src={ mediaURL } alt={ mediaALT } />
 						)
 					}
 					<div className="captions">
@@ -201,5 +209,5 @@ registerBlockType( 'cgb/block-commerce-link', {
 				</a>
 			</div>
 		);
-	}
+	},
 } );
