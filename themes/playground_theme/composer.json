@@ -1,0 +1,20 @@
+{
+  "name": "10up/playground-theme",
+  "authors": [
+    {
+      "name": "Author",
+      "email": "email@10up.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "PlaygroundTheme\\": "includes/classes/"
+    }
+  },
+  "require-dev": {
+    "10up/wp_mock": "dev-dev"
+  }
+}

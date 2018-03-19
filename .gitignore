@@ -20,5 +20,8 @@ object-cache.php
 themes/index.php
 
 themes/*
+!themes/playground_theme
+
 plugins/*
+!plugins/guten-playground
 

@@ -1,0 +1,53 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-cgb-commerce-links  {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	clear: both;
+	&:after {
+		flex-basis: 0;
+		order: 1;
+	}
+	.wp-block-cgb-block-commerce-link {
+		width: 100%;
+		display: block;
+		max-width: 100%;
+		flex: 1;
+	}
+	@media (min-width: 768px) {
+		margin-left: -30px;
+		width: calc( 100% + 30px );
+		min-width: calc( 100% + 30px );
+		.wp-block-cgb-block-commerce-link {
+			margin-left: 30px;
+			width: calc( 100% - 30px );
+			max-width: calc( 100% - 30px );
+		}
+		&[data-columns="2"] {
+			.wp-block-cgb-block-commerce-link {
+				width: calc( 50% - 30px );
+				max-width: calc( 50% - 30px );
+				flex: 1 0 50%;
+			}
+		}
+		&[data-columns="3"] {
+			.wp-block-cgb-block-commerce-link {
+				width: calc( 33.333% - 30px );
+				max-width: calc( 33.333% - 30px );
+				flex: 1 0 33.333%;
+			}
+		}
+		&[data-columns="4"] {
+			.wp-block-cgb-block-commerce-link {
+				width: calc( 25% - 30px );
+				max-width: calc( 25% - 30px );
+				flex: 1 0 25%;
+			}
+		}
+	}
+}

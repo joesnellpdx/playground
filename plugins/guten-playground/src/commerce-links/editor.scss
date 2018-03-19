@@ -1,0 +1,34 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-cgb-commerce-links  {
+	background: #EFEFEFEF;
+	border: 2px solid #CCC;
+	display: block;
+	width: 100%;
+	min-width: 100%;
+	margin: 0;
+	.wp-block-cgb-block-commerce-link {
+		background: #fff;
+	}
+	> p {
+		padding: 10px;
+		font-size: 14px;
+		display: block;
+		width: 100%;
+		min-width: 100%;
+	}
+	.editor-default-block-appender__content,
+	input[type=text].editor-default-block-appender__content {
+		background: #FFF;
+		border: 2px solid #CCC;
+		&:after {
+			content: "Add item here";
+			display: block;
+		}
+	}
+}
