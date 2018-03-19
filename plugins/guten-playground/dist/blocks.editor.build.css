@@ -1,1 +1,47 @@
-.wp-block-cgb-commerce-links{background:#EFEFEFEF;border:2px solid #CCC;display:block;width:100%;min-width:100%;margin:0}.wp-block-cgb-commerce-links .wp-block-cgb-block-commerce-link{background:#fff}.wp-block-cgb-commerce-links>p{padding:10px;font-size:14px;display:block;width:100%;min-width:100%}.wp-block-cgb-commerce-links .editor-default-block-appender__content,.wp-block-cgb-commerce-links input[type=text].editor-default-block-appender__content{background:#FFF;border:2px solid #CCC}.wp-block-cgb-commerce-links .editor-default-block-appender__content:after,.wp-block-cgb-commerce-links input[type=text].editor-default-block-appender__content:after{content:"Add item here";display:block}
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.wp-block-cgb-commerce-links {
+  background: #EFEFEFEF;
+  border: 2px solid #CCC;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  margin: 0; }
+  .wp-block-cgb-commerce-links .wp-block-cgb-block-commerce-link {
+    background: #fff; }
+  .wp-block-cgb-commerce-links > p {
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    min-width: 100%; }
+  .wp-block-cgb-commerce-links .editor-default-block-appender__content,
+  .wp-block-cgb-commerce-links input[type=text].editor-default-block-appender__content {
+    background: #FFF;
+    border: 2px solid #CCC; }
+    .wp-block-cgb-commerce-links .editor-default-block-appender__content:after,
+    .wp-block-cgb-commerce-links input[type=text].editor-default-block-appender__content:after {
+      content: "Add item here";
+      display: block; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
