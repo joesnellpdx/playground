@@ -51,7 +51,7 @@ registerBlockType( 'cgb/commerce-links', {
 		active: {
 			type: 'string',
 			default: '',
-		}
+		},
 	},
 	description: __( 'A multi-column layout wrapper for commerce links ONLY.' ),
 
@@ -70,6 +70,17 @@ registerBlockType( 'cgb/commerce-links', {
 		const onChangeColumns = value => {
 			props.setAttributes( { columns: value } );
 		};
+
+		const createNav = function () {
+			console.log( 'hello' );
+			console.log(`.editor-block-list__block-edit[data-block=${props.id}]`);
+			const navContainer = document.querySelector( `.editor-block-list__block-edit[data-block="${props.id}"]` );
+
+			console.table( props );
+			console.log(navContainer);
+		};
+
+		createNav();
 
 		return (
 			<div className={props.className}>
@@ -103,11 +114,6 @@ registerBlockType( 'cgb/commerce-links', {
 
 		return (
 			<div className={className} data-columns={columns}>
-				<div className="commerce-nav">
-					<p className="navtitle">this is the nav title</p>
-					<InnerBlocks.Content />
-					<p className="navend">this is the nav end</p>
-				</div>
 				<InnerBlocks.Content />
 			</div>
 		);
