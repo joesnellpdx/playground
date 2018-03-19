@@ -26,7 +26,7 @@ const Editable = wp.blocks.Editable; // For creating editable elements.
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'cgb/editable-block-example', {
+registerBlockType( 'jspdx/editable-block-example', {
 
 	title: __( 'Editable Block Example - JSJSJSJSJS' ), // Block title. __() function allows for internationalization.
 	icon: 'unlock', // Block icon from Dashicons. https://developer.wordpress.org/resource/dashicons/.

@@ -27,7 +27,7 @@ const fileSize = require( 'filesize' );
 const gzipSize = require( 'gzip-size' );
 const resolvePkg = require( 'resolve-pkg' );
 const config = require( '../config/webpack.config.prod' );
-const cgbDevUtilsPath = resolvePkg( 'cgb-dev-utils', { cwd: __dirname } );
+const cgbDevUtilsPath = resolvePkg( 'jspdx-dev-utils', { cwd: __dirname } );
 const clearConsole = require( cgbDevUtilsPath + '/clearConsole' );
 const formatWebpackMessages = require( cgbDevUtilsPath +
 	'/formatWebpackMessages' );

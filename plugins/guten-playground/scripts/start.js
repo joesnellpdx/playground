@@ -25,7 +25,7 @@ const chalk = require( 'chalk' );
 const webpack = require( 'webpack' );
 const config = require( '../config/webpack.config.dev' );
 const resolvePkg = require( 'resolve-pkg' );
-const cgbDevUtilsPath = resolvePkg( 'cgb-dev-utils', { cwd: __dirname } );
+const cgbDevUtilsPath = resolvePkg( 'jspdx-dev-utils', { cwd: __dirname } );
 const clearConsole = require( cgbDevUtilsPath + '/clearConsole' );
 const formatWebpackMessages = require( cgbDevUtilsPath +
 	'/formatWebpackMessages' );

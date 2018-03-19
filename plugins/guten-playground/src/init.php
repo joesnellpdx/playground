@@ -5,7 +5,7 @@
  * Enqueue CSS/JS of all the blocks.
  *
  * @since 	1.0.0
- * @package CGB
+ * @package JSPDX
  */
 
 // Exit if accessed directly.
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function guten_playground_cgb_block_assets() {
 	// Styles.
 	wp_enqueue_style(
-		'guten_playground-cgb-style-css', // Handle.
+		'guten_playground-jspdx-style-css', // Handle.
 		plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), // Block style CSS.
 		array( 'wp-blocks' ) // Dependency to include the CSS after it.
 		// filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' ) // Version: filemtime — Gets file modification time.
@@ -45,7 +45,7 @@ add_action( 'enqueue_block_assets', 'guten_playground_cgb_block_assets' );
 function guten_playground_cgb_editor_assets() {
 	// Scripts.
 	wp_enqueue_script(
-		'guten_playground-cgb-block-js', // Handle.
+		'guten_playground-jspdx-block-js', // Handle.
 		plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
 		array( 'wp-blocks', 'wp-i18n', 'wp-element' ) // Dependencies, defined above.
 		// filemtime( plugin_dir_path( __FILE__ ) . 'block.js' ) // Version: filemtime — Gets file modification time.
@@ -53,7 +53,7 @@ function guten_playground_cgb_editor_assets() {
 
 	// Styles.
 	wp_enqueue_style(
-		'guten_playground-cgb-block-editor-css', // Handle.
+		'guten_playground-jspdx-block-editor-css', // Handle.
 		plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ), // Block editor CSS.
 		array( 'wp-edit-blocks' ) // Dependency to include the CSS after it.
 		// filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' ) // Version: filemtime — Gets file modification time.

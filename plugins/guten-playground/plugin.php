@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: guten-playground — CGB Gutenberg Block Plugin
+ * Plugin Name: guten-playground — JSPDX Gutenberg Block Plugin
  * Plugin URI: https://github.com/ahmadawais/create-guten-block/
  * Description: guten-playground — is a Gutenberg plugin created via create-guten-block.
  * Author: mrahmadawais, maedahbatool
@@ -9,7 +9,7 @@
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package CGB
+ * @package JSPDX
  */
 
 // Exit if accessed directly.
